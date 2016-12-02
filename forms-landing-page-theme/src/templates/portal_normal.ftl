@@ -41,8 +41,6 @@
 			</#if>
 		</section>
 	</div>
-
-	<div class="push"></div>
 </div>
 <footer id="footer" role="contentinfo">
 	<div class="row container-fluid-1280">
