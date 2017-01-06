@@ -45,7 +45,7 @@
 <footer id="footer" role="contentinfo">
 	<div class="row container-fluid-1280">
 		<div id="copyright" class="col-sm-5 col-md-5 col-lg-5">
-			Liferay Inc. Copyright © 2016 All Rights Reserved.
+			Liferay Inc. Copyright © ${the_year} All Rights Reserved.
 		</div>
 		<div class="form-release-notes col-sm-3 col-md-3 col-lg-3">
 			<a href="https://loop.liferay.com/web/guest/home/-/loop/topics/_FormsReleaseNotes" class="btn btn-link" target="_blank">Release Notes</a>
