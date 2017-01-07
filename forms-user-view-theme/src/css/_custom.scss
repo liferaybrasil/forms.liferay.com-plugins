@@ -1,7 +1,5 @@
-@import "portlet_hello_world";
-
 body {
-	background-color: #f1f5f7;
+	background-color: #e3ebef;
 }
 
 footer#footer {
@@ -47,18 +45,19 @@ footer#footer {
 
 .portlet-forms-display {
 
+	margin: 36px 0px;
+
 	.ddl-form-builder-app {
 		border-radius: 6px;
 		padding: 0px;
 
 		.liferay-ddm-form-renderer-wizard {
-			padding: 32px 48px;
 			border-bottom: 1px solid rgba(134, 156, 173, 0.5);
 			background-color: $portlet-topper-color;
 		}
 
 		.lfr-ddm-form-page {
-			padding: 48px;
+			padding: inherit 48px;
 			background-color: $portlet-topper-color;
 		}
 
@@ -67,7 +66,7 @@ footer#footer {
 		}
 
 		.lfr-ddm-form-page-title {
-			font-family: $font-family-secondary;
+			font-family: $font-family-source-sans-pro;
 			font-weight: 400;
 			font-size: 26px;
 			line-height: 36px;
@@ -84,7 +83,7 @@ footer#footer {
 	}
 
 	.portlet-content {
-		background-color: #f1f5f7; 
+		background-color: #e3ebef; 
 		padding: 12px 10px 30px;
 	}
 
@@ -100,7 +99,7 @@ footer#footer {
 }
 
 #footer {
-	font-family: $font-family-primary;
+	font-family: $font-family-source-sans-pro;
 	background-color: $portlet-topper-color;
 	color: $brand-default;
 	margin-bottom: 60px;
@@ -139,6 +138,7 @@ footer#footer {
 	.multi-step-progress-bar > .active {
 		color: #3e9cfc;
 	}
+
 	@media (max-width: 767px) {
 		.multi-step-progress-bar {
 		padding-top: 20px; } 
@@ -165,43 +165,40 @@ footer#footer {
 	}
 
 	.form-control {
-		display: block;
-		width: 100%;
-		height: $input-height-base; 
-		padding: $padding-base-vertical $padding-base-horizontal;
-		font-size: $font-size-base;
-		line-height: $line-height-base;
-		color: $input-color;
-		border: none;
-		background-color: #f1f5f7;
-		border-radius: $input-border-radius; 
-		font-family: $font-family-secondary;
-		font-weight: bold;
-		color: #869cad;
+		border: 1px solid transparent;
+		background-color: rgba(205,218,225,0.6);
+		border-radius: 4px;
+		font-family: $font-family-source-sans-pro;
+		font-size: 16px;
+		font-weight: normal;
+		color: #39536c;
+		padding: 12px 16px;
 
-		@include placeholder;
 		@include transition(none);
 
-		&:hover, &:focus {
-			border: 1px solid #3e9cfc;
-			border-radius: $input-border-radius;
+		&:hover {
+			background-color: rgba(205,218,225,1);
+		}
+
+		&:active, &:focus  {
+			border: 1px solid #419bf9;
+			background-color: rgba(205,218,225,1);
 		}
 
 		&[disabled],
 		&[readonly],
-		fieldset[disabled] & {
-		background-color: $input-bg-disabled;
-		opacity: 1; 
+		fieldset[readonly] & {
+			background-color: rgba(205,218,225,0.4);
+			border: 1px solid transparent;
 		}
 
 		&[disabled],
 		fieldset[disabled] & {
-		cursor: $cursor-disabled;
+			cursor: $cursor-disabled;
 		}
 	}
 
 	.input-group {
-
 		&:hover, &:focus, &:active {
 			& > input {
 				border: 1px solid #3e9cfc;
@@ -222,7 +219,7 @@ footer#footer {
 		}
 
 		.input-group-addon {
-			background-color: #f1f5f7;
+			background-color: #e3ebef;
 			color: $brand-default;
 			border: 1px solid transparent;
 			border-top-right-radius: $input-border-radius;
@@ -231,7 +228,7 @@ footer#footer {
 	}
 
 	.ddl-form-basic-info {
-		margin: 12px 0px 36px -15px;
+		margin: 36px 0px;
 
 		@media (max-width: 767px) {
 			.ddl-form-name {
@@ -242,7 +239,7 @@ footer#footer {
 		}
 		@media (min-width: 768px) {
 			.ddl-form-name {
-				font-family: $font-family-primary;
+				font-family: $font-family-source-sans-pro;
 				font-weight: lighter;
 				font-size: 48px;
 				color: #748a9d;
@@ -251,12 +248,21 @@ footer#footer {
 		}
 	}
 
-	.control-label {
+	.control-label, th, td {
 		margin-bottom: 12px;
-		font-family: $font-family-primary;
-		font-weight: 400;
+		font-family: $font-family-source-sans-pro;
+		font-weight: normal;
 		font-size: 16px;
-		line-height: 20px;
+		color: #4a4a4a;
+	}
+
+	.liferay-ddm-form-field-tip {
+		margin-top: 0px;
+		margin-bottom: 12px;
+		font-family: $font-family-source-sans-pro;
+		font-size: 14px;
+		font-weight: normal;
+		color: #728694;
 	}
 
 	.lfr-ddm-form-field-container {
@@ -266,11 +272,6 @@ footer#footer {
 
 	textarea {
 		resize: none;
-		height: 80px;
-
-		&:focus {
-			height: 80px;
-		}
 	}
 
 	@media (max-width: 767px)  {
@@ -284,7 +285,7 @@ footer#footer {
 			width: 244px;
 			height: 48px;
 			padding: 12px 20px;
-			font-family: $font-family-secondary;
+			font-family: $font-family-source-sans-pro;
 			font-weight: 600;
 			font-size: 16px;
 			line-height: 22px;
@@ -302,11 +303,11 @@ footer#footer {
 
 .yui3-calendar {
 	.yui3-calendar-header-label, .yui3-calendar-day, .yui3-calendar-weekday {
-		font-family: $font-family-secondary;
+		font-family: $font-family-source-sans-pro;
 		font-weight: light;
 	}
 
 	.yui3-calendar-weekday{
-		font-family: $font-family-primary;
+		font-family: $font-family-source-sans-pro;
 	}
 }
