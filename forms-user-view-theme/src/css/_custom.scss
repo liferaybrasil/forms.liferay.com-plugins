@@ -73,6 +73,10 @@ footer#footer {
 			color: #4a4a4a;
 		}
 
+		.lfr-ddm-form-page-description {
+			color: #4a4a4a;	
+		}
+
 		.lfr-ddm-form-pagination-controls { 
 			padding-top: 40px; 
 		}
@@ -262,7 +266,7 @@ footer#footer {
 		font-family: $font-family-source-sans-pro;
 		font-size: 14px;
 		font-weight: normal;
-		color: #728694;
+		color: #4a4a4a;	
 	}
 
 	.lfr-ddm-form-field-container {
@@ -272,6 +276,22 @@ footer#footer {
 
 	textarea {
 		resize: none;
+	}
+
+	.liferay-ddm-form-field-paragraph {
+		font-family: $font-family-source-sans-pro;
+		color: #4a4a4a;	
+		line-height: 21px;
+
+		p {
+			margin-top: 0;
+		}
+	}
+
+	.liferay-ddm-form-field-grid {
+		.table-striped > tbody > tr:nth-of-type(odd) {
+			background-color: rgba(227,235,239, 0.5);
+		}
 	}
 
 	@media (max-width: 767px)  {
