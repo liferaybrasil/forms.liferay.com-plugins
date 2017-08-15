@@ -1,0 +1,58 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+
+/* inject:imports */
+
+body {
+    background-color: #F5F7F8;
+}
+
+.logo {
+	background-image: url('../images/logo.png');
+	float: left;
+}
+
+@media (min-width: 768px) {
+    .form-wrapper-content {
+        min-height: calc(100vh - 124px - 128px);
+    }
+    
+	#banner {
+		padding: 0 70px 0 10px;
+	}
+
+	.logo {
+		background-size: 255px;
+		width: 255px;
+		height: 63px;
+		margin-top: 60px;
+	}
+}
+
+@media (max-width: 767px) {
+    .form-wrapper-content {
+        min-height: calc(100vh - 64px - 124px);
+    }
+    
+	#banner {
+		padding: 0 70px 0 15px;
+	}
+	.logo {
+		background-size: 192px;
+		margin-top: 20px;
+		width: 192px;
+		height: 48px;
+	}
+}
+
+#footer {
+	background-color: #FFF;
+    padding: 42px 20px;
+    color: #869CAD;
+
+	a {
+		font-weight: bold;
+	}
+}
+/* endinject */
+
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
