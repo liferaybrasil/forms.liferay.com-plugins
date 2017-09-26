@@ -11,6 +11,20 @@ body {
 	float: left;
 }
 
+.lfr-ddm-form-paginated.yui3-widget.liferay-ddm-form-renderer-pagination {
+	text-align: center;
+}
+
+.page-maximized {
+	.ddl-form-builder-app {
+		margin-bottom: 20px;
+	}
+}
+
+.lfr-ddm-form-paginated.yui3-widget.liferay-ddm-form-renderer-pagination {
+	text-align: center;
+}
+
 @media (min-width: 768px) {
     .form-wrapper-content {
         min-height: calc(100vh - 124px - 128px);
