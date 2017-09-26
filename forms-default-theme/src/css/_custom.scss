@@ -19,10 +19,11 @@ body {
 	.ddl-form-builder-app {
 		margin-bottom: 20px;
 	}
-}
 
-.lfr-ddm-form-paginated.yui3-widget.liferay-ddm-form-renderer-pagination {
-	text-align: center;
+	.lfr-ddm-form-page-description {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
 }
 
 @media (min-width: 768px) {
@@ -38,7 +39,7 @@ body {
 		background-size: 255px;
 		width: 255px;
 		height: 63px;
-		margin-top: 42px;
+		margin-top: 60px;
 	}
 }
 
