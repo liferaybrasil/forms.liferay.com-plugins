@@ -94,13 +94,11 @@ body {
 
 		.form-control {
 			padding: 9px 12px;
-			border-radius: 4px;
-			background-color: #e3ebef;
-			border-bottom: none;
+			background-color: #F1F2F5;
+			color: #272833;
 			font-family: $font-family-source-sans-pro;
 			font-size: 16px;
 			line-height: 20px;
-			color: #728694;
 		}
 
 		.button-holder {
@@ -108,8 +106,8 @@ body {
 
 			.btn-default {
 				padding: 18px;
-				background-color: $brand-primary;
-				border-color: $brand-primary;
+				width: 100%;
+				font-family: $font-family-source-sans-pro;	
 			}
 		}
 	}
