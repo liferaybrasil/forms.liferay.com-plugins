@@ -30,7 +30,6 @@ body {
 .journal-content-article {
 	.web-content-title {
 		margin: 0px;
-		font-family: $font-family-source-sans-pro;
 		font-size: 24px;
 		line-height: 1.5em;
 		text-align: center;
@@ -39,7 +38,6 @@ body {
 
 	.web-content-subtitle {
 		margin: 0px;
-		font-family: $font-family-source-sans-pro;
 		font-size: 16px;
 		line-height: 1.5em;
 		text-align: center;
@@ -70,7 +68,7 @@ body {
 
 		.my-login-portlet-greeting {
 			margin: 0 auto 25px;
-			font-family: $font-family-source-sans-pro;
+
 			font-size: 22px;
 			line-height: 1.6em;
 			text-align: center;
@@ -78,7 +76,7 @@ body {
 		}
 
 		label {
-			font-family: $font-family-source-sans-pro;
+
 			font-size: 16px;
 
 			color: #4a4a4a;
@@ -94,9 +92,6 @@ body {
 
 		.form-control {
 			padding: 9px 12px;
-			background-color: #F1F2F5;
-			color: #272833;
-			font-family: $font-family-source-sans-pro;
 			font-size: 16px;
 			line-height: 20px;
 		}
@@ -107,7 +102,7 @@ body {
 			.btn-default {
 				padding: 18px;
 				width: 100%;
-				font-family: $font-family-source-sans-pro;	
+		
 			}
 		}
 	}
@@ -122,7 +117,6 @@ body {
 	text-align: center;
 
 	a {
-		font-family: $font-family-source-sans-pro;
 		font-size: 16px;
 		font-weight: 600;
 		color: $brand-primary;
@@ -137,11 +131,11 @@ body {
   	width: 100%;
 
   	.row {
-  		line-height: normal;
+		line-height: normal;
+		justify-content: center;
   	}
 
 	#copyright {
-		font-family: $font-family-source-sans-pro;
 		text-align: center;
 		color: #9b9b9b;
 		font-size: 14px;
@@ -154,6 +148,13 @@ body {
 }
 
 @include sm() {
+	.portlet-layout.row {
+		flex-direction: column;
+		
+		.portlet-column-first, .portlet-column-last {
+			margin: auto;
+		}
+	}
 
 	.portlet-login {
 		.form-release-notes {
@@ -163,7 +164,7 @@ body {
 
 	#footer {
 		#copyright {
-			margin-left: 119px;
+			margin-left: 51px;
 			padding: 0px;
 			text-align: left;
 		}
@@ -171,13 +172,12 @@ body {
 		.form-release-notes {
 			border: 0;
 			margin: 0;
-			margin-right: 104px;
+			margin-right: 51px;
 			display: block;
 			font-size: 16px;
 			font-weight: 600;
 			text-align: right;
 			padding: 0px;
-			float: right;
 
 			a {
 				padding: 0px;
@@ -273,6 +273,7 @@ body {
 
 		.form-release-notes {
 			margin-right: 0px;
+			margin-left: auto;
 		}
 	}
 }
@@ -301,7 +302,7 @@ body {
 		.web-content-text {
 			margin-top: 24px;
 			display: block;
-			font-family: $font-family-source-sans-pro;
+
 			font-size: 18px;
 			font-weight: 600;
 			line-height: 1.3em;
