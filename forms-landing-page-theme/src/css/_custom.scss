@@ -6,7 +6,7 @@ html {
 }
 
 body {
-	background-color: #e3ebef;
+	background-color: $body-bg;
   	margin-bottom: 72px;
 }
 
@@ -146,8 +146,53 @@ body {
 		display: none;
 	}
 }
+#welcome-sheet {
+	transform: translateY(15%);
+}
+
+.sheet-lg {
+	max-width: -webkit-fill-available;
+}
+
+.sheet-header, 
+.sheet-footer {
+	margin: 0 8px;
+}
+
+.sheet-header {
+	margin-bottom: 1rem;
+}
+
+#manage-forms {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 2rem;
+
+	.sheet-section {
+		margin: 0px 10px;
+		margin-bottom: 2rem;
+		max-width: 600px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+#forms-team {
+    display: flex;
+    justify-content: center;
+	padding: 32px;
+}
 
 @include sm() {
+	#manage-forms {
+		flex-wrap: nowrap;
+
+		.sheet-section {
+			margin-bottom: 0;
+		}
+	}
 	.portlet-layout.row {
 		flex-direction: column;
 		
@@ -189,11 +234,7 @@ body {
 }
 
 @include md() {
-	body {
-		background-color: transparent;
-	}
-
-	.section-one {
+	#sign-in {
 		height: calc(100vh - 72px);
 		background: url('../images/liferay_form_background/background_990_@2x.jpg') no-repeat center center fixed;
 		background-size: cover;
@@ -279,7 +320,7 @@ body {
 }
 
 @include lg() {
-	.section-one {
+	#sign-in {
 		background: url('../images/liferay_form_background/background_1440_@2x.jpg') no-repeat center center fixed;
 		background-size: cover;
 	}
