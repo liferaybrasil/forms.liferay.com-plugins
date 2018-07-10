@@ -183,6 +183,10 @@ body {
     display: flex;
     justify-content: center;
 	padding: 32px;
+
+	.lexicon-icon {
+		color: red;
+	}
 }
 
 @include sm() {
