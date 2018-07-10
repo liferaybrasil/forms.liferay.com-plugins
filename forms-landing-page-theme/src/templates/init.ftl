@@ -75,7 +75,7 @@
 		user_login_ip = user.getLoginIP()
 		user_middle_name = user.getMiddleName()
 		user_name = user.getFullName()
-		<#--  user_screen_name = user.getScreenName()  -->
+		user_screen_name = theme_display.getUser().screenName
 		w3c_language_id = localeUtil.toW3cLanguageId(theme_display.getLanguageId())
 	/>
 </#if>

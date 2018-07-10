@@ -68,7 +68,7 @@
 						<div class="sheet-section">
 							<h3 class="sheet-subtitle">Manage your Personal Forms</h3>
 							<div class="sheet-text">You can create Forms and share them with whoever you want. Only you can see and edit the Forms and their entries.<br>&nbsp</div>
-							<a class="btn btn-primary" href="https://forms.liferay.com/user/${user_first_name}.${user_last_name}/~/control_panel/manage?p_p_id=com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormAdminPortlet&p_p_lifecycle=0&p_p_state=maximized">My Personal Forms</a>
+							<a class="btn btn-primary" href="https://forms.liferay.com/user/${themeDisplay.getUser().screenName}/~/control_panel/manage?p_p_id=com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormAdminPortlet&p_p_lifecycle=0&p_p_state=maximized">My Personal Forms</a>
 						</div>
 						
 						<div class="sheet-section">
